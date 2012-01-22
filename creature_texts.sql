@@ -1290,7 +1290,7 @@ DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"I spent my whole life caring for these trees. Pruning and nurturing them... only fitting that they have joined me in death.",12,0,100,0,0,0,"Hans Zandin"),
 (@ENTRY,0,1,"This orchard is now as barren and lifeless as my rotting shell. Once these trees bloomed with fruit but now there is only rot.",12,0,100,0,0,0,"Hans Zandin");
-(@ENTRY,0,2,"My trees.... they have withered up and died just like me.",12,0,100,0,0,0,"Hans Zandin");
+(@ENTRY,0,2,"My trees... they have withered up and died just like me.",12,0,100,0,0,0,"Hans Zandin");
 
 -- Text for Tarren Mill Deathguard
 SET @ENTRY := 2405;
@@ -2776,9 +2776,9 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 SET @ENTRY := 14224;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Unknown life forms detected.... assessing...",12,0,100,0,0,0,"7:XT"),
-(@ENTRY,0,1,"Target lost.... resuming search patterns Delta.",12,0,100,0,0,0,"7:XT"),
-(@ENTRY,0,2,"Scanning life forms.... target not found.",12,0,100,0,0,0,"7:XT");
+(@ENTRY,0,0,"Unknown life forms detected... assessing...",12,0,100,0,0,0,"7:XT"),
+(@ENTRY,0,1,"Target lost... resuming search patterns Delta.",12,0,100,0,0,0,"7:XT"),
+(@ENTRY,0,2,"Scanning life forms... target not found.",12,0,100,0,0,0,"7:XT");
 
 -- Text for Emogg the Crusher
 SET @ENTRY := 14267;
@@ -3108,7 +3108,7 @@ SET @ENTRY := 16461;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"We could have had so much fun!",14,0,100,0,0,0,"Concubine"),
-(@ENTRY,1,0,"They fall asleep after. Me, I fall asleep during....",14,0,100,0,0,0,"Concubine");
+(@ENTRY,1,0,"They fall asleep after. Me, I fall asleep during...",14,0,100,0,0,0,"Concubine");
 
 -- Text for Spectral Patron
 SET @ENTRY := 16468;
@@ -3267,7 +3267,7 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 SET @ENTRY := 16916;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Please! I must feed on something soon... A mana crystal.... a shard... anything! The pain is unbearable!",12,0,100,0,0,0,"Wretched Captive");
+(@ENTRY,0,0,"Please! I must feed on something soon... A mana crystal... a shard... anything! The pain is unbearable!",12,0,100,0,0,0,"Wretched Captive");
 
 -- Text for Sergeant Kan'ren
 SET @ENTRY := 16924;
@@ -3294,7 +3294,7 @@ DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"Be at peace, my sweet, sweet, Luhanaa.",12,0,100,1,0,0,"Draenei Mourner"),
 (@ENTRY,0,1,"It should have been me!",12,0,100,1,0,0,"Draenei Mourner"),
-(@ENTRY,0,2,"<Sobbing> I hate graveyards. So many dead. And my sweet Luhanaa.....",12,0,100,1,0,0,"Draenei Mourner"),
+(@ENTRY,0,2,"<Sobbing> I hate graveyards. So many dead. And my sweet Luhanaa...",12,0,100,1,0,0,"Draenei Mourner"),
 (@ENTRY,1,0,"We should never have come along.",12,0,100,1,0,0,"Draenei Mourner"),
 (@ENTRY,1,1,"If I ever find the ones responsible for the crash...!",12,0,100,1,0,0,"Draenei Mourner"),
 (@ENTRY,1,2,"I'll never forget you, my love.",12,0,100,1,0,0,"Draenei Mourner"),
@@ -3586,7 +3586,7 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 (@ENTRY,0,2,"Hurry up with it already! The longer you take, the more of a hurtin' I'm putting on you!",14,0,100,0,0,0,"Coilfang Slavehandler"),
 (@ENTRY,1,0,"What is this?! Didn't mommy and daddy teach you anything?",14,0,100,0,0,0,"Coilfang Slavehandler"),
 (@ENTRY,1,1,"Get back to work you!",14,0,100,0,0,0,"Coilfang Slavehandler"),
-(@ENTRY,1,2,"This is terrible..... my arms grow tired from beating on you lazy peons!",14,0,100,0,0,0,"Coilfang Slavehandler"),
+(@ENTRY,1,2,"This is terrible... my arms grow tired from beating on you lazy peons!",14,0,100,0,0,0,"Coilfang Slavehandler"),
 (@ENTRY,2,0,"Assist me slaves!",14,0,100,0,0,0,"Coilfang Slavehandler");
 
 -- Text for Coilfang Collaborator
@@ -4689,7 +4689,7 @@ SET @ENTRY := 25396;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"You cannot stop us all!",12,0,100,0,0,0,"Naxxanar Skeletal Mage"),
-(@ENTRY,0,1,"Your death will soon follow....",12,0,100,0,0,0,"Naxxanar Skeletal Mage");
+(@ENTRY,0,1,"Your death will soon follow...",12,0,100,0,0,0,"Naxxanar Skeletal Mage");
 
 -- Text for Simmer
 SET @ENTRY := 25416;
@@ -5046,7 +5046,7 @@ SET @ENTRY := 28068;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
 (@ENTRY,0,0,"Mmm, more mojo.",14,0,100,0,0,0,"Prophet of Sseratus"),
-(@ENTRY,1,0,"NOOOOOOOOooooooo.........!",14,0,100,0,0,0,"Prophet of Sseratus"),
+(@ENTRY,1,0,"NOOOOOOOOooooooo......!",14,0,100,0,0,0,"Prophet of Sseratus"),
 (@ENTRY,2,0,"They dare attack us? The fools! Do they not know we are now all-powerful?!",14,0,100,0,0,0,"Prophet of Sseratus"),
 (@ENTRY,2,1,"With the power of the wild gods burning in our veins, none, not even the Lich King, can stand in our way!",14,0,100,0,0,0,"Prophet of Sseratus"),
 (@ENTRY,2,2,"I see you, insect! Come closer",14,0,100,0,0,0,"Prophet of Sseratus"),
