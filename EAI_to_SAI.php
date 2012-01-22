@@ -205,7 +205,7 @@
                 $query .= "$type,$param2,0,0,";
                 break;
             case 32: //! Check if target should be there (same as case 12)
-                $innerResult = mysql_query("SELECT spawntimesecs FROM creature_ai_summons WHERE id = $row[action1_param3];") or die("Query can't be executed");
+                $innerResult = mysql_query("SELECT spawntimesecs FROM creature_ai_summons WHERE id = $param3;") or die("Query can't be executed");
                 $innerRow = mysql_fetch_row($innerResult);
                 $query .= "12,$param1,1," . ($innerRow[0]) . ",";
                 break;
