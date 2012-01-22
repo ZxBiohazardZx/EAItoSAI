@@ -334,37 +334,28 @@ SET @ENTRY := 435;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Champion"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Champion"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Champion"),
-(@ENTRY,2,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Champion");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Champion");
 
 -- Text for Blackrock Shadowcaster
 SET @ENTRY := 436;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Shadowcaster"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Shadowcaster"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Shadowcaster");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Shadowcaster");
 
 -- Text for Blackrock Renegade
 SET @ENTRY := 437;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Renegade"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Renegade"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Renegade");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Renegade");
 
 -- Text for Blackrock Grunt
 SET @ENTRY := 440;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Grunt"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Grunt"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Grunt");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Grunt");
 
 -- Text for Redridge Alpha
 SET @ENTRY := 445;
@@ -479,9 +470,7 @@ SET @ENTRY := 485;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Outrunner"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Outrunner"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Outrunner");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Outrunner");
 
 -- Text for Tharil'zun
 SET @ENTRY := 486;
@@ -665,9 +654,7 @@ SET @ENTRY := 615;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Tracker"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Tracker"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Tracker");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Tracker");
 
 -- Text for Defias Conjurer
 SET @ENTRY := 619;
@@ -1805,8 +1792,6 @@ DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 SET @ENTRY := 2149;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
-INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Dwarvish] Dum mos",12,0,100,0,0,0,"Dark Iron Raider");
 
 -- Text for Greymist Oracle
 SET @ENTRY := 2207;
@@ -1817,7 +1802,7 @@ SET @ENTRY := 2226;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Arrrhhh...Guards!",14,1,100,0,0,0,"Karos Razok");
+(@ENTRY,0,0,"Arrrhhh... Guards!",14,1,100,0,0,0,"Karos Razok");
 
 -- Text for Syndicate Footpad
 SET @ENTRY := 2240;
@@ -3326,9 +3311,7 @@ SET @ENTRY := 4065;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Sentry"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Sentry"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Sentry");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Sentry");
 
 -- Text for Sentinel Thenysil
 SET @ENTRY := 4079;
@@ -3519,18 +3502,14 @@ SET @ENTRY := 4462;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Hunter"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Hunter"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Hunter");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Hunter");
 
 -- Text for Blackrock Summoner
 SET @ENTRY := 4463;
 DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"[Orcish] Tago mog regas gi mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Summoner"),
-(@ENTRY,0,1,"[Orcish] Ogg kaz ko zugas kil mog Tov'nokaz Kagg",12,0,100,0,0,0,"Blackrock Summoner"),
-(@ENTRY,1,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Summoner");
+(@ENTRY,0,0,"%s becomes enraged!",16,0,100,0,0,0,"Blackrock Summoner");
 
 -- Text for Blackrock Gladiator
 SET @ENTRY := 4464;
