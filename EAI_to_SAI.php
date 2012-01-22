@@ -66,10 +66,10 @@
         $query = "(@ENTRY,0," . $rowId++ . ",0,$row[event_type],";
 
         for ($phase = 32; $phase > 0; $phase /= 2) //! not sure if it works right
-            if ($row['event_inverse_phase_mask'] & $phase)
+            if (!($row['event_inverse_phase_mask'] & $phase))
                 $phaseMask |= $phase;
 
-        $query .= "$phaseMask,$row[event_chance]," . (($row['event_flags'] & 1) ? ($row['event_flags'] &~ 1) : ($row['event_flags'] | 1)) . ",";
+        $query .= (($phaseMask == 63) ? 0 : $phaseMask) . ",$row[event_chance]," . (($row['event_flags'] & 1) ? ($row['event_flags'] &~ 1) : ($row['event_flags'] | 1)) . ",";
 
         switch($row['event_type'])
         {
@@ -251,7 +251,7 @@
             else
             {
                 $paramTarget = $row['action' . $actionField . "_param$target"];
-                $query .= ($paramTarget + 1) . ",0,0,0,0,0,0,0,0," ;
+                $query .= ($paramTarget + 1) . ",0,0,0,0,0,0,0," ;
             }
         }
         else
