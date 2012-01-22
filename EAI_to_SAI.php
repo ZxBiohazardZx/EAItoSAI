@@ -23,10 +23,11 @@
     $AIFile = fopen($path . "smart_scripts.sql", "a");
     $textsFile = fopen($path . "creature_texts.sql", "a");
 
+    fwrite($textsFile, "-- Remove all creature_ai_texts entries as they are now replaced\r\n");
+    fwrite($textsFile, "DELETE FROM `creature_ai_texts`");
+
     $firstRow = true;
     $name = "";
-
-    $firstTextRow = true;
 
     nextRow: while ($row = mysql_fetch_assoc($result))
     {
@@ -100,19 +101,13 @@
                 $innerResult = mysql_query("SELECT * FROM creature_ai_texts WHERE entry IN ($param1, $param2, $param3);") or die("Query can't be executed");
                 $id = 0;
 
-                if (!$firstTextRow)
-                {
-                    if ($nextNpc)
-                        fwrite($textsFile, ";\r\n\r\n");
-                }
-                else
-                    $firstTextRow = false;
+                if ($nextNpc)
+                    fwrite($textsFile, ";\r\n\r\n");
 
                 if ($nextNpc)
                 {
                     fwrite($textsFile, "-- Text for $name\r\n");
                     fwrite($textsFile, "SET @ENTRY := $row[creature_id];\r\n");
-                    fwrite($textsFile, "DELETE FROM `creature_ai_texts` WHERE `npc_entry`=@ENTRY;\r\n");
                     fwrite($textsFile, "DELETE FROM `creature_text` WHERE `entry`=@ENTRY;\r\n");
                     fwrite($textsFile, "INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES\r\n");
                 }
