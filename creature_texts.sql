@@ -1362,10 +1362,7 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 SET @ENTRY := 2435;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
 INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`comment`) VALUES
-(@ENTRY,0,0,"Help me! Help! Assassins in the hills! To arms! To arms!",14,0,100,22,0,0,"Southshore Crier"),
-(@ENTRY,1,0,"Guards to your posts! They must be after the Magistrate again. He must be protected! They could come from any direction!",12,0,100,1,0,0,"Southshore Crier"),
-(@ENTRY,2,0,"%s grabs the back of his neck and his eyes go wide.",16,0,100,0,0,0,"Southshore Crier"),
-(@ENTRY,3,0,"Assassins... save... th... Magistraaa...",12,0,100,65,0,0,"Southshore Crier");
+(@ENTRY,0,0,"Help me! Help! Assassins in the hills! To arms! To arms!",14,0,100,22,0,0,"Southshore Crier");
 
 -- Text for Drunken Footpad
 SET @ENTRY := 2440;
