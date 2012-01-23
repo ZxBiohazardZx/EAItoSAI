@@ -499,10 +499,9 @@ INSERT INTO `creature_text` (`entry`,`groupid`,`id`,`text`,`type`,`language`,`pr
 (@ENTRY,0,0,"None may challenge the Brotherhood!",14,0,100,0,0,5780,"Edwin VanCleef"),
 (@ENTRY,1,0,"Lap dogs, all of you!",14,0,100,0,0,5782,"Edwin VanCleef"),
 (@ENTRY,2,0,"%s calls more of his allies out of the shadows.",16,0,100,0,0,0,"Edwin VanCleef"),
-(@ENTRY,3,0,"Fools! our cause it righteous!",14,0,100,0,0,5783,"Edwin VanCleef"),
-(@ENTRY,4,0,"%s calls more of his allies out of the shadows.",16,0,100,0,0,0,"Edwin VanCleef"),
-(@ENTRY,5,0,"And stay down!",14,0,100,0,0,5781,"Edwin VanCleef"),
-(@ENTRY,6,0,"The Brotherhood will prevail!",14,0,100,0,0,5784,"Edwin VanCleef");
+(@ENTRY,3,0,"Fools! Our cause it righteous!",14,0,100,0,0,5783,"Edwin VanCleef"),
+(@ENTRY,4,0,"And stay down!",14,0,100,0,0,5781,"Edwin VanCleef"),
+(@ENTRY,5,0,"The Brotherhood will prevail!",14,0,100,0,0,5784,"Edwin VanCleef");
 
 -- Text for Rhahk'Zor
 SET @ENTRY := 644;
